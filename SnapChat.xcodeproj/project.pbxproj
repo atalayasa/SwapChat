@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		474F87D91F4C1CFD00EE4B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F87D81F4C1CFD00EE4B91 /* AppDelegate.swift */; };
-		474F87DB1F4C1CFD00EE4B91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F87DA1F4C1CFD00EE4B91 /* ViewController.swift */; };
+		474F87DB1F4C1CFD00EE4B91 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F87DA1F4C1CFD00EE4B91 /* CameraVC.swift */; };
 		474F87DE1F4C1CFD00EE4B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474F87DC1F4C1CFD00EE4B91 /* Main.storyboard */; };
 		474F87E01F4C1CFD00EE4B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474F87DF1F4C1CFD00EE4B91 /* Assets.xcassets */; };
 		474F87E31F4C1CFD00EE4B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474F87E11F4C1CFD00EE4B91 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		474F87D51F4C1CFD00EE4B91 /* SnapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		474F87D81F4C1CFD00EE4B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		474F87DA1F4C1CFD00EE4B91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		474F87DA1F4C1CFD00EE4B91 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		474F87DD1F4C1CFD00EE4B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		474F87DF1F4C1CFD00EE4B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		474F87E21F4C1CFD00EE4B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				474F87D81F4C1CFD00EE4B91 /* AppDelegate.swift */,
-				474F87DA1F4C1CFD00EE4B91 /* ViewController.swift */,
+				474F87DA1F4C1CFD00EE4B91 /* CameraVC.swift */,
 				474F87DC1F4C1CFD00EE4B91 /* Main.storyboard */,
 				474F87DF1F4C1CFD00EE4B91 /* Assets.xcassets */,
 				474F87E11F4C1CFD00EE4B91 /* LaunchScreen.storyboard */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				474F87DB1F4C1CFD00EE4B91 /* ViewController.swift in Sources */,
+				474F87DB1F4C1CFD00EE4B91 /* CameraVC.swift in Sources */,
 				474F87D91F4C1CFD00EE4B91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,11 +263,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = XBXBJNJ6HY;
 				INFOPLIST_FILE = SnapChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atalayasa.SnapChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = XBXBJNJ6HY;
 				INFOPLIST_FILE = SnapChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atalayasa.SnapChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
